@@ -1,0 +1,217 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.header {
+    width: 100%;
+    height: 657px;
+    background-image: url(../image/university.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+nav{
+    display: flex;
+    padding:2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+nav img{
+    width: 150px;
+
+}
+.nav-links{
+    flex: 1;
+    text-align:right ;
+}
+.nav-links ul li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.nav-links ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+}
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background-color:#6936f4;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+.tex-box h1{
+    font-size: 40px;
+}
+.tex-box{
+    width: 90%;
+    color:rgb(236, 240, 241);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+
+.hero-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    border: 1px solid white;
+    padding: 15px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+.hero-btn:hover{
+    border: 1px solid red;
+    background-color: red;
+    transition: 0.5s;
+}
+nav .fa-solid {
+    display:none ;
+}
+@media(max-width:700px){
+    .tex-box h1{
+        font-size: 100%;
+
+    }
+    .nav-links ul li{
+        display: block;
+    }
+    .nav-links{
+        position: absolute;
+        background: red;
+        height: 100%;
+        width: 200px;
+        top: 0;
+        left: 0;
+        text-align: left;
+        z-index:1 ;
+        transition: 1s;
+       
+
+    }
+    .nav-links a li{
+        font-size: 200px;
+    }
+    nav .fa-solid{
+        display:block ;
+        color: white;
+        margin: 15px;
+        font-size: 25px;
+        cursor: pointer;
+    }
+    .nav-links ul{
+        padding: 25px;
+    }
+}
+.course{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+.course h1{
+    font-size: 36px;
+    font-weight: 600;
+    font-family: 'Moul', cursive;
+    color: rgb(11, 43, 61);
+    
+}
+.course p{
+    color: rgba(0, 0, 255, 0.384);
+    font-size: 14px;
+    font-weight: 300px;
+    line-height: 22px;
+    padding: 10px;
+ 
+}
+.row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+.course-col{
+    flex-basis: 24.5%;
+    background: rgba(128, 128, 128, 0.103);
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing:border-box ;
+}
+h3{
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+}
+.course-col:hover{
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
+}
+@media(max-width:700px){
+    .row{
+        flex-direction: column;
+    }
+}
+.campus{
+    width:80%;
+    margin:auto ;
+    text-align: center;
+    padding-top: 50px;
+}
+.campus-col {
+    flex-basis: 32%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+}
+.campus-col img{
+    width: 100%;
+    display: block;
+}
+.layer{
+    
+    height: 100%;
+    width:100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.4s;
+   
+    
+}
+.layer:hover{
+    background:rgba(208, 255, 0, 0.158) ;
+    transform: rotate(5deg);
+}
+.layer h3{
+    width: 100%;
+    font-weight: 500;
+    color: white;
+    font-weight: 500;
+    font-size: 26px;
+    bottom: 0;
+    left:50% ;
+    transform: translateX(-50%);
+    position: absolute;
+    transition: 1.5s;
+}
+.layer:hover h3{
+    bottom: 50%;
+    opacity: 1;
+}
+.facilities{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}

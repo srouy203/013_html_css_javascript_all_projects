@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: sans-serif;
+}
+.menu{
+    width: 100%;
+    height: 60px;
+    background-color: rgb(88, 88, 255);
+}
+.menu .logo{
+    float: left;
+    width: 200px;
+    height: auto;
+    padding: 20px;
+    margin-left: 50px;
+}
+.menu .logo > a{
+    text-decoration: none;
+    color: white;
+}
+.menu .submenu{
+    float: right;
+    width: 50%;
+}
+.menu .submenu > ul > li{
+    list-style: none;
+    display: inline-block; 
+    padding: 20.6px 40px;
+    transition: all .3s;
+}
+.menu .submenu > ul > li >a{
+    text-decoration: none;
+    color: white;
+}
+.menu .submenu > ul > li:hover{
+    background-color: rgb(133, 133, 255);
+}

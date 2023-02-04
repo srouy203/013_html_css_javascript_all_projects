@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.hero{
+    width: 100%;
+    height: 100vh;
+    background-color: antiquewhite;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.hero>h1{
+    font-size: 50px; 
+
+    margin-bottom: 100px;
+    margin-top: -100px;
+}
+.icon{
+    display: flex;
+}
+.icon>a{
+    width: 80px;
+    height: 80px;
+    background-color: white;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    box-shadow: 0 0 20px 10px rgba(0,0,0,0.05);
+    margin: 0 30px;
+    border-radius: 50%;
+    
+    position: relative;
+    overflow: hidden;
+    transition: 0.5s;
+}
+.icon>a .fa-brands{
+    font-size: 30px;
+    line-height: 80px;
+    /* margin-top: 25px; */
+
+    position: relative;
+    z-index: 10;
+    transition: color 0.5s;
+}
+.icon>a::after{
+    content: '';
+    width: 100%;
+    height: 100%;
+    top: -90px;
+    left: 0;
+    background: linear-gradient(-45deg, #ed1c94, #ffec17);
+    position: absolute;
+    transition: 0.5s;
+}
+.icon>a:hover::after{
+    top: 0;
+}
+.icon>a:hover .fa-brands{
+    color: white;
+}
+.icon>a:hover{
+    transform: translateY(-10px);
+}

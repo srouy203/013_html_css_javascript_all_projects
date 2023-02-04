@@ -1,0 +1,171 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.main{
+    width: 100%;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.5)50%, rgba(0, 0, 0, 0.5)50%), url(img/tree-alone.jpg);
+    position: center;
+    background-size: cover;
+    height: 109vh;
+}
+.navbar{
+    width: 1200px;
+    height: 75px;
+    /* background-color: aqua; */
+    margin: auto;
+}
+.icon{
+    width: 200px;
+    height: 100%;
+    float:left;
+}
+.logo{
+    color: orange;
+    font-family: Arial;
+    font-size: 30px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.logo:hover{
+    color: rgb(95, 68, 19);
+    transition: 0.4s ease-out;
+}
+.menu{
+    margin-left: 12%;
+    font-size: 0;
+    float: left;
+}
+.menu>ul>li{
+    list-style: none;
+    display: inline-block;
+    font-size: 17px;
+}
+.menu>ul>li>a{
+    height: 100%;
+    /* background-color: rgb(255, 0, 140); */
+    text-decoration: none;
+    padding: 27.7px 15px;
+    display: inline-block;
+    color: whitesmoke;
+}
+.menu>ul>li>a:hover{
+    background-color: rgba(0, 0, 0, 0.685);
+    transition: 0.4s ease-in-out;
+    color: orange;
+}
+.search{
+    float: left;
+    margin-left: 90px;
+    margin-top: -20px;
+    
+}
+.search>.src{
+    background: transparent;
+    font-family: Arial;
+    width: 200px;
+    height: 40px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-style: 1px solid orange;
+    border-right: none;
+    float: left;
+    padding-left: 10px;
+    color: white;
+    font-size: 16px;
+}
+.search>.src:hover{
+    background-color: rgba(0, 0, 0, 0.158);
+    transition: 0.4s ease-in-out;
+}
+.search:focus{
+    outline: none;
+}
+.search>.btn{
+    height: 40px;
+    background-color: orange;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px ;
+    width: 80px;
+    border-style: 1px solid orange;
+    font-size: 16px;
+    color: white;
+    cursor: pointer;
+}
+.search>.btn:hover{
+    background-color: rgba(248, 174, 37, 0.5);
+    transition: 0.4s ease-in-out;
+}
+/* contain-------------------------------------- */
+.contain{
+    width: 1200px;
+    margin: auto;
+    height: auto; 
+}
+.welcome{
+    width: 60%;
+    height: 50%;
+    /* background-color: bisque; */
+    float: left;
+    margin-top: 13%;
+}
+.web{
+    font-size: 45px;
+    color: white;
+}
+.develop{
+    font-size: 60px;
+    color: orange;
+}
+.welcome>p{
+    font-size: 20px;
+    line-height: 30px;
+    font-family: sans-serif;
+    color: white;
+    margin-top: 10px;
+}
+.welcome>button{
+    width: 150px;
+    height: 40px;
+    margin-top: 30px;
+    border-style: none;
+    border-radius: 10px;
+    background-color: orange;
+    cursor: pointer;
+}
+.welcome>button:hover{
+    background-color: rgb(170, 111, 0);
+    transition: 0.4s ease-out;
+    /* box-shadow: 0 0 5px 0; */
+}
+.welcome>button>a{
+    color: white;
+    text-decoration: none;
+}
+/* login page --------------------------------------*/
+#login1{
+    width: 40%;
+    height: auto;
+    /* background-color: aquamarine; */
+    float: right;
+    margin-top: 13%;
+}
+.login{
+    box-shadow: 0 0 20px 0;
+    color:white;
+    border-radius: 20px;
+    background: rgba(0, 0, 0, 0.253);
+    padding: 50px 30px;
+    width: 80%;
+    float: right;
+}
+.title_log{
+    text-align: center;
+    font-size: 25px;
+    font-family: sans-serif;
+    margin-top: -15px;
+}
+.btn{
+    background-color: orange;
+    transition: 0.4s ease-in-out;
+}

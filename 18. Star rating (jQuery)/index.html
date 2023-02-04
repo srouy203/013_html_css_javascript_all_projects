@@ -1,0 +1,80 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Star rating</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/da15371ed2.js" crossorigin="anonymous"></script>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .contain{
+            width: 500px;
+            height: 200px;
+            background-color: cadetblue;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .contain .fa-star{
+            font-size: 50px;
+            margin-left: 10px;
+            /* color: white; */
+            cursor: pointer;
+        }
+        #st{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="contain">
+        <i class="fa-solid fa-star" id="s1"></i>
+        <i class="fa-solid fa-star" id="s2"></i>
+        <i class="fa-solid fa-star" id="s3"></i>
+        <i class="fa-solid fa-star" id="s4"></i>
+        <i class="fa-solid fa-star" id="s5"></i>
+    </div>
+    <p>You're rating: <span id="st"></span> stars </p>
+    
+    
+    <script>
+        $(document).ready(function(){
+            $("#s1").click(function(){
+                $(".fa-star").css("color","black");
+                $("#s1").css("color","yellow");
+                $("#st").text("1");
+            });
+            $("#s2").click(function(){
+                $(".fa-star").css("color","black");
+                $("#s1, #s2").css("color","yellow");
+                $("#st").text("2");
+            });
+            $("#s3").click(function(){
+                $(".fa-star").css("color","black");
+                $("#s1, #s2, #s3").css("color","yellow");
+                $("#st").text("3");
+            });
+            $("#s4").click(function(){
+                $(".fa-star").css("color","black");
+                $("#s1, #s2, #s3, #s4").css("color","yellow");
+                $("#st").text("4");
+            });
+            $("#s5").click(function(){
+                $(".fa-star").css("color","black");
+                $("#s1, #s2, #s3, #s4, #s5").css("color","yellow");
+                $("#st").text("5");
+            });
+        }); 
+    </script>
+</body>
+</html>

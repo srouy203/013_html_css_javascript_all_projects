@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+/* html,body{
+    display: grid;
+    height: 100%;
+    width: 100%;
+    place-items: center;
+} */
+.container{
+    width: 100%;
+    height: 100vh;
+    background-color: azure;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.button a{
+    text-decoration: none;
+    color: black;
+}
+.container .button{
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    background-color: white;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    float: left;
+    margin: 0 10px;
+    border-radius: 50px;
+    cursor: pointer;
+
+    transition: all 0.3s ease-out;
+    overflow: hidden;
+}
+.container .button .icon{
+     display: inline-block;
+     width: 60px;
+     height: 60px;
+     border-radius: 50%;
+     box-sizing: border-box;
+     text-align: center;
+     transition: all 0.3s;
+}
+.container .button:hover{
+    width: 200px;
+}
+.container .button:nth-child(1):hover .icon{
+    background-color: blue;
+}
+.container .button:nth-child(2):hover .icon{
+    background-color: cornflowerblue;
+}
+.container .button:nth-child(3):hover .icon{
+    background-color: rgb(255, 0, 200);
+}
+.container .button:nth-child(4):hover .icon{
+    background-color: rgb(255, 0, 0);
+}
+.container .button:nth-child(5):hover .icon{
+    background-color: cadetblue;
+}
+.container .button:hover .icon i{
+    color: white;
+}
+.container .button .icon i{
+    font-size: 25px;
+    line-height: 60px;
+    transition: all 0.3s;
+}
+
+.button span{
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-left: 10px;
+    line-height: 60px;
+}
+.container .button:nth-child(1):hover span{
+    color: blue;
+}
+.container .button:nth-child(2):hover span{
+    color: cornflowerblue;
+}
+.container .button:nth-child(3):hover span{
+    color: rgb(255, 0, 200);
+}
+.container .button:nth-child(4):hover span{
+    color: rgb(255, 0, 0);
+}
+.container .button:nth-child(5):hover span{
+    color: cadetblue;
+}
+
+
